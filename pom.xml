@@ -14,7 +14,10 @@
   </modules>
   <build>
   <pluginManagement>
+    
+    
     <plugins>
+      
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-compiler-plugin</artifactId>
@@ -23,6 +26,15 @@
              <target>1.5</target>
            </configuration>
         </plugin>
+      <plugins>
+        <plugin>
+          
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>3.0.4</version> <!-- using latest from maven central, feel free to use any specific -->
+        
+     </plugins>
+      
       </plugins>
    
    </pluginManagement>
@@ -36,10 +48,15 @@
         <version>2.4.2</version>
       </plugin>
        <plugin>
-  <groupId>org.codehaus.mojo</groupId>
-  <artifactId>findbugs-maven-plugin</artifactId>
-  <version>2.3.2</version>
-</plugin> 
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>findbugs-maven-plugin</artifactId>
+                            <version>3.0.5-SNAPSHOT</version>
+                            <configuration>
+                                    <xmlOutput>true</xmlOutput>
+                                    <!-- Optional directory to put findbugs xdoc xml report -->
+                                    <xmlOutputDirectory>target/site</xmlOutputDirectory>
+                            </configuration>
+                    </plugin>
     </plugins>
   </reporting>
 
