@@ -73,7 +73,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>3.0.5-SNAPSHOT</version>
+        <version>3.0.4</version>
       </plugin>
     </plugins>
     
@@ -90,7 +90,7 @@
        <plugin>
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>findbugs-maven-plugin</artifactId>
-                            <version>3.0.5-SNAPSHOT</version>
+                            <version>3.0.4</version>
                             <configuration>
                                     <xmlOutput>true</xmlOutput>
                                     <!-- Optional directory to put findbugs xdoc xml report -->
